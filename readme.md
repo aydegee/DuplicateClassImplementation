@@ -1,5 +1,7 @@
 Demonstrates an issue when using CocoaPods to integrate a library with the the unit test target when one of its dependencies is already included by the application. 
 
+See CocoaPods issue https://github.com/CocoaPods/CocoaPods/issues/4626
+
 In this case, Xcode shows the following in the debug console while running the unit tests e.g.
 
 > Class `AFQueryStringPair` is implemented in both `/Users/andrew/Library/Developer/CoreSimulator/Devices/7BBE0E8C-6CD1-4BFC-88CA-60BC2523DE75/data/Containers/Bundle/Application/4A81F309-461E-4A31-8C60-64FBF8C6EA03/DuplicateClassImplementation.app/DuplicateClassImplementation` and `/Users/andrew/Development/example/DuplicateClassImplementation/Build/Products/Debug-iphonesimulator/DuplicateClassImplementationTests.xctest/DuplicateClassImplementationTests`. One of the two will be used. Which one is undefined
